@@ -17,23 +17,29 @@
         <legend>사용자 정보</legend>
         <ul>
           <li>
-            <label>아이디<input type="text" id="uid"></label>
+            <label for="uid">아이디</label>
+            <input type="text" id="uid">
           </li>
           <li>
-            <label>이메일<input type="email" id="mail"></label>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail">
           </li>
           <li>
-            <label>비밀번호<input type="password" id="pwd"></label>
+            <label for="pwd">비밀번호</label>
+            <input type="password" id="pwd">
           </li>
           <li>
-            <label>비밀번호 확인<input type="password" id="pwdcheck"></label>
+            <label for="pwdcheck">비밀번호 확인</label>
+            <input type="password" id="pwdcheck">
           </li>
         </ul>
       </fieldset>
       <fieldset>
         <legend>이벤트와 새로운 소식</legend>
-        <label><input type="radio" name="recieve" value="yes">메일 수신</label>
-        <label><input type="radio" name="recieve" value="no">메일 수신 안함</label>
+        <input type="radio" name="recieve" value="yes" id="mail_yes">
+        <label for="mail_yes">메일 수신</label>
+        <input type="radio" name="recieve" value="no" id="mail_no">
+        <label for="mail_no">메일 수신 안함</label>
       </fieldset>
       <input type="submit" value="가입하기">
       <input type="reset" value="취소">
